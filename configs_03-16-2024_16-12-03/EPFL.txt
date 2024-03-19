@@ -1,0 +1,77 @@
+AutoAttach table
+_uuid mappings system_description system_name
+----- -------- ------------------ -----------
+
+Bridge table
+_uuid                                auto_attach controller datapath_id datapath_type datapath_version external_ids fail_mode  flood_vlans flow_tables ipfix mcast_snooping_enable mirrors name  netflow other_config                                          ports                                                                                                                                                                                                                                protocols rstp_enable rstp_status sflow status stp_enable
+------------------------------------ ----------- ---------- ----------- ------------- ---------------- ------------ ---------- ----------- ----------- ----- --------------------- ------- ----- ------- ----------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --------- ----------- ----------- ----- ------ ----------
+236e9140-0d7c-4b0f-8053-1673c9e0f420 []          []         []          ""            ""               {}           standalone []          {}          []    false                 []      "br0" []      {stp-priority="3", stp-system-id="33:33:33:33:33:33"} [355310d3-8f33-486b-873d-ffe03f6133ae, 377c9031-2866-4397-ad10-c63eea089390, 6d9c118f-8c35-4199-bae0-6ae47f51aa08, e6a00108-8652-4de9-a9e4-3957cfaef094, e8ac8cf7-3acd-4e33-a6f1-7b2482d00eb8, f389a72b-3b8a-433f-9c30-ebcf42db1d82] []        false       {}          []    {}     true      
+
+Controller table
+_uuid connection_mode controller_burst_limit controller_rate_limit enable_async_messages external_ids inactivity_probe is_connected local_gateway local_ip local_netmask max_backoff other_config role status target
+----- --------------- ---------------------- --------------------- --------------------- ------------ ---------------- ------------ ------------- -------- ------------- ----------- ------------ ---- ------ ------
+
+Flow_Sample_Collector_Set table
+_uuid bridge external_ids id ipfix
+----- ------ ------------ -- -----
+
+Flow_Table table
+_uuid external_ids flow_limit groups name overflow_policy prefixes
+----- ------------ ---------- ------ ---- --------------- --------
+
+IPFIX table
+_uuid cache_active_timeout cache_max_flows external_ids obs_domain_id obs_point_id other_config sampling targets
+----- -------------------- --------------- ------------ ------------- ------------ ------------ -------- -------
+
+Interface table
+_uuid                                admin_state bfd bfd_status cfm_fault cfm_fault_status cfm_flap_count cfm_health cfm_mpid cfm_remote_mpids cfm_remote_opstate duplex error external_ids ifindex ingress_policing_burst ingress_policing_rate lacp_current link_resets link_speed link_state lldp mac mac_in_use mtu mtu_request name           ofport ofport_request options other_config statistics status type    
+------------------------------------ ----------- --- ---------- --------- ---------------- -------------- ---------- -------- ---------------- ------------------ ------ ----- ------------ ------- ---------------------- --------------------- ------------ ----------- ---------- ---------- ---- --- ---------- --- ----------- -------------- ------ -------------- ------- ------------ ---------- ------ --------
+ca6eab0c-ca17-47e3-88a1-c6f26cbec5fe []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-CERN"      []     []             {}      {}           {}         {}     ""      
+6d006081-d0f1-4372-8948-f4ea51abb6c1 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-ETHZ"      []     []             {}      {}           {}         {}     ""      
+8e898fc7-2c25-46e9-bf79-e3fb7dba2655 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-staff_3"   []     []             {}      {}           {}         {}     ""      
+d7252c9e-c6e7-4957-ac49-ef5d1b00c8d8 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-student_3" []     []             {}      {}           {}         {}     ""      
+84b9388b-9ff9-4446-baf1-3f6d1cd09981 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-vpn_3"     []     []             {}      {}           {}         {}     ""      
+d5584c9a-f082-40e2-a7c8-a2df1824d405 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "br0"          []     []             {}      {}           {}         {}     internal
+
+Manager table
+_uuid connection_mode external_ids inactivity_probe is_connected max_backoff other_config status target
+----- --------------- ------------ ---------------- ------------ ----------- ------------ ------ ------
+
+Mirror table
+_uuid external_ids name output_port output_vlan select_all select_dst_port select_src_port select_vlan snaplen statistics
+----- ------------ ---- ----------- ----------- ---------- --------------- --------------- ----------- ------- ----------
+
+NetFlow table
+_uuid active_timeout add_id_to_interface engine_id engine_type external_ids targets
+----- -------------- ------------------- --------- ----------- ------------ -------
+
+Open_vSwitch table
+_uuid                                bridges                                cur_cfg datapath_types   db_version external_ids                iface_types                                                              manager_options next_cfg other_config ovs_version ssl statistics system_type system_version
+------------------------------------ -------------------------------------- ------- ---------------- ---------- --------------------------- ------------------------------------------------------------------------ --------------- -------- ------------ ----------- --- ---------- ----------- --------------
+36622e42-077a-431a-bd4d-28ee1264f4be [236e9140-0d7c-4b0f-8053-1673c9e0f420] 0       [netdev, system] "7.14.0"   {hostname="", system-id=""} [geneve, gre, internal, ipsec_gre, lisp, patch, stt, system, tap, vxlan] []              10       {}           "2.6.2"     []  {}         debian      "9"           
+
+Port table
+_uuid                                bond_active_slave bond_downdelay bond_fake_iface bond_mode bond_updelay external_ids fake_bridge interfaces                             lacp mac name           other_config qos rstp_statistics rstp_status statistics status tag trunks   vlan_mode
+------------------------------------ ----------------- -------------- --------------- --------- ------------ ------------ ----------- -------------------------------------- ---- --- -------------- ------------ --- --------------- ----------- ---------- ------ --- -------- ---------
+e6a00108-8652-4de9-a9e4-3957cfaef094 []                0              false           []        0            {}           false       [ca6eab0c-ca17-47e3-88a1-c6f26cbec5fe] []   []  "65-CERN"      {}           []  {}              {}          {}         {}     []  [10, 20] []       
+377c9031-2866-4397-ad10-c63eea089390 []                0              false           []        0            {}           false       [6d006081-d0f1-4372-8948-f4ea51abb6c1] []   []  "65-ETHZ"      {}           []  {}              {}          {}         {}     []  [10, 20] []       
+e8ac8cf7-3acd-4e33-a6f1-7b2482d00eb8 []                0              false           []        0            {}           false       [8e898fc7-2c25-46e9-bf79-e3fb7dba2655] []   []  "65-staff_3"   {}           []  {}              {}          {}         {}     10  []       []       
+f389a72b-3b8a-433f-9c30-ebcf42db1d82 []                0              false           []        0            {}           false       [d7252c9e-c6e7-4957-ac49-ef5d1b00c8d8] []   []  "65-student_3" {}           []  {}              {}          {}         {}     20  []       []       
+355310d3-8f33-486b-873d-ffe03f6133ae []                0              false           []        0            {}           false       [84b9388b-9ff9-4446-baf1-3f6d1cd09981] []   []  "65-vpn_3"     {}           []  {}              {}          {}         {}     []  []       []       
+6d9c118f-8c35-4199-bae0-6ae47f51aa08 []                0              false           []        0            {}           false       [d5584c9a-f082-40e2-a7c8-a2df1824d405] []   []  "br0"          {}           []  {}              {}          {}         {}     []  []       []       
+
+QoS table
+_uuid external_ids other_config queues type
+----- ------------ ------------ ------ ----
+
+Queue table
+_uuid dscp external_ids other_config
+----- ---- ------------ ------------
+
+SSL table
+_uuid bootstrap_ca_cert ca_cert certificate external_ids private_key
+----- ----------------- ------- ----------- ------------ -----------
+
+sFlow table
+_uuid agent external_ids header polling sampling targets
+----- ----- ------------ ------ ------- -------- -------

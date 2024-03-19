@@ -1,0 +1,50 @@
+Building configuration...
+
+Current configuration:
+!
+frr version 7.2.1
+frr defaults traditional
+hostname PARI_router
+no ipv6 forwarding
+!
+interface host
+ ip address 65.103.0.2/24
+!
+interface lo
+ ip address 65.153.0.2/24
+!
+interface matrix_65
+ ip address 65.0.198.1/24
+!
+interface port_GENE
+ ip address 65.0.3.1/24
+ ip ospf cost 10
+!
+interface port_LOND
+ ip address 65.0.4.1/24
+ ip ospf cost 10
+!
+interface port_MIAM
+ ip address 65.0.6.1/24
+ ip ospf cost 100
+!
+interface port_NEWY
+ ip address 65.0.5.1/24
+ ip ospf cost 60
+!
+interface port_ZURI
+ ip address 65.0.1.2/24
+ ip ospf cost 10
+!
+router ospf
+ network 65.0.1.0/24 area 0
+ network 65.0.3.0/24 area 0
+ network 65.0.4.0/24 area 0
+ network 65.0.5.0/24 area 0
+ network 65.0.6.0/24 area 0
+ network 65.0.198.0/24 area 0
+ network 65.103.0.0/24 area 0
+!
+line vty
+!
+end

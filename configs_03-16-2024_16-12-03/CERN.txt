@@ -1,0 +1,79 @@
+AutoAttach table
+_uuid mappings system_description system_name
+----- -------- ------------------ -----------
+
+Bridge table
+_uuid                                auto_attach controller datapath_id datapath_type datapath_version external_ids fail_mode  flood_vlans flow_tables ipfix mcast_snooping_enable mirrors name  netflow other_config                                          ports                                                                                                                                                                                                                                                                      protocols rstp_enable rstp_status sflow status stp_enable
+------------------------------------ ----------- ---------- ----------- ------------- ---------------- ------------ ---------- ----------- ----------- ----- --------------------- ------- ----- ------- ----------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------- ----------- ----------- ----- ------ ----------
+52aad064-7553-446a-9170-d0107718069e []          []         []          ""            ""               {}           standalone []          {}          []    false                 []      "br0" []      {stp-priority="1", stp-system-id="11:11:11:11:11:11"} [05b03f93-d1bb-4455-a171-991b44884906, 461ba2b8-b62a-4b20-b668-942b1b9d77f6, 53969730-31c0-4d97-900f-237242e03cd1, 8cfa66b5-1178-45dd-ac6f-1e2ef2b56986, a8bb59fa-9a1d-4962-9eb6-620907aa9b76, f01e59b4-8a30-4874-98e7-b3e5287a7cb9, f704e5b2-221c-4c8d-a57d-a8ea9babd7ef] []        false       {}          []    {}     true      
+
+Controller table
+_uuid connection_mode controller_burst_limit controller_rate_limit enable_async_messages external_ids inactivity_probe is_connected local_gateway local_ip local_netmask max_backoff other_config role status target
+----- --------------- ---------------------- --------------------- --------------------- ------------ ---------------- ------------ ------------- -------- ------------- ----------- ------------ ---- ------ ------
+
+Flow_Sample_Collector_Set table
+_uuid bridge external_ids id ipfix
+----- ------ ------------ -- -----
+
+Flow_Table table
+_uuid external_ids flow_limit groups name overflow_policy prefixes
+----- ------------ ---------- ------ ---- --------------- --------
+
+IPFIX table
+_uuid cache_active_timeout cache_max_flows external_ids obs_domain_id obs_point_id other_config sampling targets
+----- -------------------- --------------- ------------ ------------- ------------ ------------ -------- -------
+
+Interface table
+_uuid                                admin_state bfd bfd_status cfm_fault cfm_fault_status cfm_flap_count cfm_health cfm_mpid cfm_remote_mpids cfm_remote_opstate duplex error external_ids ifindex ingress_policing_burst ingress_policing_rate lacp_current link_resets link_speed link_state lldp mac mac_in_use mtu mtu_request name           ofport ofport_request options other_config statistics status type    
+------------------------------------ ----------- --- ---------- --------- ---------------- -------------- ---------- -------- ---------------- ------------------ ------ ----- ------------ ------- ---------------------- --------------------- ------------ ----------- ---------- ---------- ---- --- ---------- --- ----------- -------------- ------ -------------- ------- ------------ ---------- ------ --------
+37adbf8a-5837-4216-9094-bb1cd9d0b8a3 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-EPFL"      []     []             {}      {}           {}         {}     ""      
+e44bce96-1657-4885-ba3f-16b14cd9a44d []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-ETHZ"      []     []             {}      {}           {}         {}     ""      
+888049ca-fdc7-40ed-b0ec-b8738d8deecf []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-staff_1"   []     []             {}      {}           {}         {}     ""      
+5bc05e97-9933-4caf-90c3-c7be52388383 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-student_1" []     []             {}      {}           {}         {}     ""      
+5c0885aa-ec3b-435c-96f4-80acd238250d []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "65-vpn_1"     []     []             {}      {}           {}         {}     ""      
+40e0bfd6-dcc9-4e0f-bb85-b1eca8a3ba9d []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          GENErouter     []     []             {}      {}           {}         {}     ""      
+4bc18976-0515-4b8d-ab90-37fe21dba4e1 []          {}  {}         []        []               []             []         []       []               []                 []     []    {}           []      0                      0                     []           []          []         []         {}   []  []         []  []          "br0"          []     []             {}      {}           {}         {}     internal
+
+Manager table
+_uuid connection_mode external_ids inactivity_probe is_connected max_backoff other_config status target
+----- --------------- ------------ ---------------- ------------ ----------- ------------ ------ ------
+
+Mirror table
+_uuid external_ids name output_port output_vlan select_all select_dst_port select_src_port select_vlan snaplen statistics
+----- ------------ ---- ----------- ----------- ---------- --------------- --------------- ----------- ------- ----------
+
+NetFlow table
+_uuid active_timeout add_id_to_interface engine_id engine_type external_ids targets
+----- -------------- ------------------- --------- ----------- ------------ -------
+
+Open_vSwitch table
+_uuid                                bridges                                cur_cfg datapath_types   db_version external_ids                iface_types                                                              manager_options next_cfg other_config ovs_version ssl statistics system_type system_version
+------------------------------------ -------------------------------------- ------- ---------------- ---------- --------------------------- ------------------------------------------------------------------------ --------------- -------- ------------ ----------- --- ---------- ----------- --------------
+c40f41be-4e42-4ddd-995f-cab695f65cd4 [52aad064-7553-446a-9170-d0107718069e] 0       [netdev, system] "7.14.0"   {hostname="", system-id=""} [geneve, gre, internal, ipsec_gre, lisp, patch, stt, system, tap, vxlan] []              15       {}           "2.6.2"     []  {}         debian      "9"           
+
+Port table
+_uuid                                bond_active_slave bond_downdelay bond_fake_iface bond_mode bond_updelay external_ids fake_bridge interfaces                             lacp mac name           other_config qos rstp_statistics rstp_status statistics status tag trunks   vlan_mode
+------------------------------------ ----------------- -------------- --------------- --------- ------------ ------------ ----------- -------------------------------------- ---- --- -------------- ------------ --- --------------- ----------- ---------- ------ --- -------- ---------
+a8bb59fa-9a1d-4962-9eb6-620907aa9b76 []                0              false           []        0            {}           false       [37adbf8a-5837-4216-9094-bb1cd9d0b8a3] []   []  "65-EPFL"      {}           []  {}              {}          {}         {}     []  [10, 20] []       
+53969730-31c0-4d97-900f-237242e03cd1 []                0              false           []        0            {}           false       [e44bce96-1657-4885-ba3f-16b14cd9a44d] []   []  "65-ETHZ"      {}           []  {}              {}          {}         {}     []  [10, 20] []       
+f01e59b4-8a30-4874-98e7-b3e5287a7cb9 []                0              false           []        0            {}           false       [888049ca-fdc7-40ed-b0ec-b8738d8deecf] []   []  "65-staff_1"   {}           []  {}              {}          {}         {}     10  []       []       
+f704e5b2-221c-4c8d-a57d-a8ea9babd7ef []                0              false           []        0            {}           false       [5bc05e97-9933-4caf-90c3-c7be52388383] []   []  "65-student_1" {}           []  {}              {}          {}         {}     20  []       []       
+05b03f93-d1bb-4455-a171-991b44884906 []                0              false           []        0            {}           false       [5c0885aa-ec3b-435c-96f4-80acd238250d] []   []  "65-vpn_1"     {}           []  {}              {}          {}         {}     []  []       []       
+8cfa66b5-1178-45dd-ac6f-1e2ef2b56986 []                0              false           []        0            {}           false       [40e0bfd6-dcc9-4e0f-bb85-b1eca8a3ba9d] []   []  GENErouter     {}           []  {}              {}          {}         {}     []  []       []       
+461ba2b8-b62a-4b20-b668-942b1b9d77f6 []                0              false           []        0            {}           false       [4bc18976-0515-4b8d-ab90-37fe21dba4e1] []   []  "br0"          {}           []  {}              {}          {}         {}     []  []       []       
+
+QoS table
+_uuid external_ids other_config queues type
+----- ------------ ------------ ------ ----
+
+Queue table
+_uuid dscp external_ids other_config
+----- ---- ------------ ------------
+
+SSL table
+_uuid bootstrap_ca_cert ca_cert certificate external_ids private_key
+----- ----------------- ------- ----------- ------------ -----------
+
+sFlow table
+_uuid agent external_ids header polling sampling targets
+----- ----- ------------ ------ ------- -------- -------
